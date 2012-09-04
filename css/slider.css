@@ -29,52 +29,52 @@ ul.slides li{
 
 ul.slides li:nth-child(1){
 	-webkit-transform: rotate3d( 1, 0, 0, 0deg ) translate3d(0, 0, 150px);
-	-webkit-animation: rotate-1 ease 10s infinite;
+	-webkit-animation: rotate-1 ease 20s infinite;
 }
 
 ul.slides li:nth-child(2){
 	-webkit-transform: rotate3d( 1, 0, 0, -90deg ) translate3d(0, 0, 150px);
-	-webkit-animation: rotate-2 ease 10s infinite;
+	-webkit-animation: rotate-2 ease 20s infinite;
 }
 
 ul.slides li:nth-child(3){
 	-webkit-transform: rotate3d( 1, 0, 0, 180deg ) translate3d(0, 0, 150px);
-	-webkit-animation: rotate-3 ease 10s infinite;
+	-webkit-animation: rotate-3 ease 20s infinite;
 }
 
 ul.slides li:nth-child(4){
 	-webkit-transform: rotate3d( 1, 0, 0, 270deg ) translate3d(0, 0, 150px);
-	-webkit-animation: rotate-4 ease 10s infinite;
+	-webkit-animation: rotate-4 ease 20s infinite;
 }
 
 @-webkit-keyframes rotate-1{
-	0%		{ -webkit-transform: rotate3d( 1, 0, 0, 0deg ) translate3d(0, 0, 150px); }
-	25%		{ -webkit-transform: rotate3d( 1, 0, 0, -90deg ) translate3d(0, 0, 150px); }
-	50%		{ -webkit-transform: rotate3d( 1, 0, 0, -180deg ) translate3d(0, 0, 150px); }
-	75%		{ -webkit-transform: rotate3d( 1, 0, 0, -270deg ) translate3d(0, 0, 150px); }
-	100%	{ -webkit-transform: rotate3d( 1, 0, 0, -360deg ) translate3d(0, 0, 150px); }
+	0%, 15%		{ -webkit-transform: rotate3d( 1, 0, 0, 0deg ) translate3d(0, 0, 150px); }
+	25%, 40%	{ -webkit-transform: rotate3d( 1, 0, 0, -90deg ) translate3d(0, 0, 150px); }
+	50%, 65%	{ -webkit-transform: rotate3d( 1, 0, 0, -180deg ) translate3d(0, 0, 150px); }
+	75%, 90%	{ -webkit-transform: rotate3d( 1, 0, 0, -270deg ) translate3d(0, 0, 150px); }
+	100%		{ -webkit-transform: rotate3d( 1, 0, 0, -360deg ) translate3d(0, 0, 150px); }
 }
 
 @-webkit-keyframes rotate-2{
-	0%		{ -webkit-transform: rotate3d( 1, 0, 0, 90deg ) translate3d(0, 0, 150px); }
-	25%		{ -webkit-transform: rotate3d( 1, 0, 0, 0deg ) translate3d(0, 0, 150px); }
-	50%		{ -webkit-transform: rotate3d( 1, 0, 0, -90deg ) translate3d(0, 0, 150px); }
-	75%		{ -webkit-transform: rotate3d( 1, 0, 0, -180deg ) translate3d(0, 0, 150px); }
-	100%	{ -webkit-transform: rotate3d( 1, 0, 0, -270deg ) translate3d(0, 0, 150px); }
+	0%, 15%		{ -webkit-transform: rotate3d( 1, 0, 0, 90deg ) translate3d(0, 0, 150px); }
+	25%, 40%	{ -webkit-transform: rotate3d( 1, 0, 0, 0deg ) translate3d(0, 0, 150px); }
+	50%, 65%	{ -webkit-transform: rotate3d( 1, 0, 0, -90deg ) translate3d(0, 0, 150px); }
+	75%, 90%	{ -webkit-transform: rotate3d( 1, 0, 0, -180deg ) translate3d(0, 0, 150px); }
+	100%		{ -webkit-transform: rotate3d( 1, 0, 0, -270deg ) translate3d(0, 0, 150px); }
 }
 
 @-webkit-keyframes rotate-3{
-	0%		{ -webkit-transform: rotate3d( 1, 0, 0, 180deg ) translate3d(0, 0, 150px); }
-	25%		{ -webkit-transform: rotate3d( 1, 0, 0, 90deg ) translate3d(0, 0, 150px); }
-	50%		{ -webkit-transform: rotate3d( 1, 0, 0, 0deg ) translate3d(0, 0, 150px); }
-	75%		{ -webkit-transform: rotate3d( 1, 0, 0, -90deg ) translate3d(0, 0, 150px); }
-	100%	{ -webkit-transform: rotate3d( 1, 0, 0, -180deg ) translate3d(0, 0, 150px); }
+	0%, 15%		{ -webkit-transform: rotate3d( 1, 0, 0, 180deg ) translate3d(0, 0, 150px); }
+	25%, 40%	{ -webkit-transform: rotate3d( 1, 0, 0, 90deg ) translate3d(0, 0, 150px); }
+	50%, 65%	{ -webkit-transform: rotate3d( 1, 0, 0, 0deg ) translate3d(0, 0, 150px); }
+	75%, 90%	{ -webkit-transform: rotate3d( 1, 0, 0, -90deg ) translate3d(0, 0, 150px); }
+	100%		{ -webkit-transform: rotate3d( 1, 0, 0, -180deg ) translate3d(0, 0, 150px); }
 }
 
 @-webkit-keyframes rotate-4{
-	0%		{ -webkit-transform: rotate3d( 1, 0, 0, 270deg ) translate3d(0, 0, 150px); }
-	25%		{ -webkit-transform: rotate3d( 1, 0, 0, 180deg ) translate3d(0, 0, 150px); }
-	50%		{ -webkit-transform: rotate3d( 1, 0, 0, 90deg ) translate3d(0, 0, 150px); }
-	75%		{ -webkit-transform: rotate3d( 1, 0, 0, 0deg ) translate3d(0, 0, 150px); }
-	100%	{ -webkit-transform: rotate3d( 1, 0, 0, -90deg ) translate3d(0, 0, 150px); }
+	0%, 15%		{ -webkit-transform: rotate3d( 1, 0, 0, 270deg ) translate3d(0, 0, 150px); }
+	25%, 40%	{ -webkit-transform: rotate3d( 1, 0, 0, 180deg ) translate3d(0, 0, 150px); }
+	50%, 65%	{ -webkit-transform: rotate3d( 1, 0, 0, 90deg ) translate3d(0, 0, 150px); }
+	75%, 90%	{ -webkit-transform: rotate3d( 1, 0, 0, 0deg ) translate3d(0, 0, 150px); }
+	100%		{ -webkit-transform: rotate3d( 1, 0, 0, -90deg ) translate3d(0, 0, 150px); }
 }
