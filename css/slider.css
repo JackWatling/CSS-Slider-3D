@@ -1,0 +1,21 @@
+section.slider{
+	width: 900px;
+	height: 300px;
+	margin: 100px auto 0 auto;
+}
+
+section.slider ul.slides{
+	height: 300px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+section.slider ul.slides > li{
+	height: 300px;
+	width: 900px;
+	display: block;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+}
