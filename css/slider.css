@@ -3,11 +3,18 @@ section.slider{
 	height: 300px;
 	margin: 100px auto 0 auto;
 	position: relative;
+	-webkit-perspective: 1000;
+}
+
+section.slider:hover section.cube ul,
+section.slider:hover section.progress{
+	-webkit-animation-play-state: paused;
 }
 
 section.slider section.cube{
 	-webkit-perspective: 1000;
 }
+
 
 section.slider section.cube ul{
 	height: 300px;
@@ -30,17 +37,13 @@ section.slider section.cube ul > li{
 }
 
 section.progress{
-	display: block;
 	width: 0%;
 	height: 3px;
+	display: block;
 	background: rgba(255, 255, 255, 0.5);
 	position: absolute;
 	bottom: 0;
 	-webkit-animation: progress 5s infinite;
-}
-
-section.cube ul li{
-	-webkit-transition: all 1s ease;
 }
 
 section.cube ul li:nth-child(1){ -webkit-transform: rotate3d( 1, 0, 0, 0deg ) translate3d(0, 0, 150px); }
@@ -50,10 +53,10 @@ section.cube ul li:nth-child(4){ -webkit-transform: rotate3d( 1, 0, 0, 270deg ) 
 
 @-webkit-keyframes rotate{
 	0%, 20%		{ -webkit-transform: translate3d(0, 0, -150px) rotate3d(1, 0, 0, 0deg); }
-	25%, 45%		{ -webkit-transform: translate3d(0, 0, -150px) rotate3d(1, 0, 0, -90deg); }
-	50%, 70%		{ -webkit-transform: translate3d(0, 0, -150px) rotate3d(1, 0, 0, -180deg); }
-	75%, 95%		{ -webkit-transform: translate3d(0, 0, -150px) rotate3d(1, 0, 0, -270deg); }
-	100%	{ -webkit-transform: translate3d(0, 0, -150px) rotate3d(1, 0, 0, -360deg); }
+	25%, 45%	{ -webkit-transform: translate3d(0, 0, -150px) rotate3d(1, 0, 0, -90deg); }
+	50%, 70%	{ -webkit-transform: translate3d(0, 0, -150px) rotate3d(1, 0, 0, -180deg); }
+	75%, 95%	{ -webkit-transform: translate3d(0, 0, -150px) rotate3d(1, 0, 0, -270deg); }
+	100%		{ -webkit-transform: translate3d(0, 0, -150px) rotate3d(1, 0, 0, -360deg); }
 }
 
 @-webkit-keyframes progress{
