@@ -2,6 +2,7 @@ section.slider{
 	width: 900px;
 	height: 300px;
 	margin: 100px auto 0 auto;
+	position: relative;
 }
 
 section.slider section.cube{
@@ -15,7 +16,7 @@ section.slider section.cube ul{
 	margin: 0;
 	-webkit-transform-style: preserve-3d;
 	-webkit-backface-visibility: hidden;
-	-webkit-animation: rotate 10s infinite;
+	-webkit-animation: rotate 20s infinite;
 }
 
 section.slider section.cube ul > li{
@@ -28,6 +29,16 @@ section.slider section.cube ul > li{
 	/*opacity: 0.5;*/
 }
 
+section.progress{
+	display: block;
+	width: 0%;
+	height: 3px;
+	background: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	bottom: 0;
+	-webkit-animation: progress 5s infinite;
+}
+
 section.cube ul li{
 	-webkit-transition: all 1s ease;
 }
@@ -38,9 +49,14 @@ section.cube ul li:nth-child(3){ -webkit-transform: rotate3d( 1, 0, 0, 180deg ) 
 section.cube ul li:nth-child(4){ -webkit-transform: rotate3d( 1, 0, 0, 270deg ) translate3d(0, 0, 150px); }
 
 @-webkit-keyframes rotate{
-	0%		{ -webkit-transform: translate3d(0, 0, -150px) rotate3d(1, 0, 0, 0deg); }
-	25%		{ -webkit-transform: translate3d(0, 0, -150px) rotate3d(1, 0, 0, -90deg); }
-	50%		{ -webkit-transform: translate3d(0, 0, -150px) rotate3d(1, 0, 0, -180deg); }
-	75%		{ -webkit-transform: translate3d(0, 0, -150px) rotate3d(1, 0, 0, -270deg); }
+	0%, 20%		{ -webkit-transform: translate3d(0, 0, -150px) rotate3d(1, 0, 0, 0deg); }
+	25%, 45%		{ -webkit-transform: translate3d(0, 0, -150px) rotate3d(1, 0, 0, -90deg); }
+	50%, 70%		{ -webkit-transform: translate3d(0, 0, -150px) rotate3d(1, 0, 0, -180deg); }
+	75%, 95%		{ -webkit-transform: translate3d(0, 0, -150px) rotate3d(1, 0, 0, -270deg); }
 	100%	{ -webkit-transform: translate3d(0, 0, -150px) rotate3d(1, 0, 0, -360deg); }
+}
+
+@-webkit-keyframes progress{
+	0%, 80.1%, 100%	{ width: 0%; }
+	80%				{ width: 100%; }
 }
